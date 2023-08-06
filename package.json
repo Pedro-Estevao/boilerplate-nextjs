@@ -16,6 +16,7 @@
     "component:headless": "cypress run --component"
   },
   "dependencies": {
+    "@jest/globals": "^29.6.2",
     "@types/node": "20.4.6",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
@@ -34,6 +35,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.3",
+    "@types/testing-library__jest-dom": "^5.14.9",
     "babel-jest": "^29.6.2",
     "cypress": "^12.17.3",
     "identity-obj-proxy": "^3.0.0",

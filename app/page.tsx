@@ -3,7 +3,7 @@ import ThemeToggle from '@/components/ThemeToggle';
 
 export default function Home() {
 	return (
-		<>
+		<div>
 			<Head>
 				<title>Boilerplate - NextJS</title>
 			</Head>
@@ -17,6 +17,6 @@ export default function Home() {
 
 				<p className="text-black dark:text-white">Apenas um teste</p>
 			</main>
-		</>
+		</div>
 	);
 };

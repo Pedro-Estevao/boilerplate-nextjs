@@ -4,10 +4,8 @@ const createJestConfig = nextJest({
 	dir: './',
 });
 
-const config = {
+const customJestConfig = {
 	setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-	testEnvironment: 'jest-environment-jsdom',
-	testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
 	collectCoverage: true,
 	coverageProvider: 'v8',
 	collectCoverageFrom: [
@@ -25,6 +23,8 @@ const config = {
 		'^.+\\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg)$/i': `<rootDir>/__mocks__/fileMock.js`,
 		'^@/components/(.*)$': '<rootDir>/components/$1',
 	},
+	testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
+  	testEnvironment: 'jest-environment-jsdom',
 	transform: {
 		'^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
 	},
@@ -34,4 +34,4 @@ const config = {
 	],
 };
 
-module.exports = createJestConfig(config);
+module.exports = createJestConfig(customJestConfig);
