@@ -23,6 +23,7 @@ const customJestConfig = {
 		'^.+\\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg)$/i': `<rootDir>/__mocks__/fileMock.js`,
 		'^@/components/(.*)$': '<rootDir>/components/$1',
 		'^@/app/(.*)$': '<rootDir>/app/$1',
+		'^styled-components': '<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js'
 	},
 	testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
   	testEnvironment: 'jest-environment-jsdom',
@@ -31,6 +32,7 @@ const customJestConfig = {
 	},
 	transformIgnorePatterns: [
 		'/node_modules/',
+		'/.next/',
 		'^.+\\.module\\.(css|sass|scss)$',
 	],
 };
