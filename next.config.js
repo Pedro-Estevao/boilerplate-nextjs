@@ -12,9 +12,6 @@ const nextConfig = withPWA({
     compiler: {
         styledComponents: true,
     },
-    sassOptions: {
-        includePaths: [path.join(__dirname, 'public/styles')],
-    },
 });
 
 module.exports = nextConfig;
