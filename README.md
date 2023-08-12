@@ -44,7 +44,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 - `start`: starts a simple server with the build production code
 - `lint`: runs the linter in all components and pages
 - `test`: runs jest to test all components and pages in watch mode
-- `cypress`: runs cypress to tests
+- `cypress`: runs cypress to tests end-to-end
 - `storybook`: runs storybook on `localhost:6006`
 - `build-storybook`: create the build version of storybook
 
