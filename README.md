@@ -4,7 +4,7 @@
   <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://raw.githubusercontent.com/Pedro-Estevao/boilerplate-nextjs/master/public/img/logo.svg">
 </picture>
 
-This is a [Next.js](https://nextjs.org/) boilerplate to be used in a course called [React Avançado](https://reactavancado.com.br/).
+This is a [Next.js](https://nextjs.org/) boilerplate developed during the course called [React Avançado](https://reactavancado.com.br/).
 ![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
 
 ## What is inside?
@@ -26,11 +26,11 @@ This project uses lot of stuff as:
 First, run the development server:
 
 ```bash
-npm run dev
+$ npm run dev
 # or
-yarn dev
+$ yarn dev
 # or
-pnpm run dev
+$ pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -68,9 +68,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 To start a new project based on this boilerplate just run the code:
 
 ```bash
-npm create-next-app@latest -e https://github.com/Pedro-Estevao/boilerplate-nextjs.git
+$ npm create-next-app@latest -e https://github.com/Pedro-Estevao/boilerplate-nextjs.git
 # or
-yarn create next-app -e https://github.com/Pedro-Estevao/boilerplate-nextjs.git
+$ yarn create next-app -e https://github.com/Pedro-Estevao/boilerplate-nextjs.git
 # or
-pnpm create next-app -e https://github.com/Pedro-Estevao/boilerplate-nextjs.git
+$ pnpm create next-app -e https://github.com/Pedro-Estevao/boilerplate-nextjs.git
 ```
