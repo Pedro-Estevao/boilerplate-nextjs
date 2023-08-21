@@ -68,9 +68,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 To start a new project based on this boilerplate just run the code:
 
 ```bash
-$ npm create-next-app@latest -e https://github.com/Pedro-Estevao/boilerplate-nextjs.git
+$ npm create-next-app@latest -e https://github.com/Pedro-Estevao/boilerplate-nextjs
 # or
-$ yarn create next-app -e https://github.com/Pedro-Estevao/boilerplate-nextjs.git
+$ yarn create next-app -e https://github.com/Pedro-Estevao/boilerplate-nextjs
 # or
-$ pnpm create next-app -e https://github.com/Pedro-Estevao/boilerplate-nextjs.git
+$ pnpm create next-app -e https://github.com/Pedro-Estevao/boilerplate-nextjs
 ```
