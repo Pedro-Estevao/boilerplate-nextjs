@@ -5,7 +5,6 @@
 </picture>
 
 This is a [Next.js](https://nextjs.org/) boilerplate developed during the course called [React Avançado](https://reactavancado.com.br/).
-![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
 
 ## What is inside?
 
