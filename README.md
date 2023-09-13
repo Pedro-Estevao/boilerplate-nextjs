@@ -5,7 +5,6 @@
 </picture>
 
 This is a [Next.js](https://nextjs.org/) boilerplate developed during the course called [React Avançado](https://reactavancado.com.br/).
-![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
 
 ## What is inside?
 
@@ -68,7 +67,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 To start a new project based on this boilerplate just run the code:
 
 ```bash
-$ npm create-next-app@latest -e https://github.com/Pedro-Estevao/boilerplate-nextjs
+$ npx create-next-app -e https://github.com/Pedro-Estevao/boilerplate-nextjs
 # or
 $ yarn create next-app -e https://github.com/Pedro-Estevao/boilerplate-nextjs
 # or
