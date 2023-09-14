@@ -5,9 +5,9 @@ const createJestConfig = nextJest({
 });
 
 const customJestConfig = {
-	setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+	setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
 	collectCoverage: true,
-	coverageProvider: 'v8',
+	// coverageProvider: 'v8',
 	collectCoverageFrom: [
 		'app/*.ts(x)?',
 		'components/*.stories.ts(x)?',
@@ -30,7 +30,7 @@ const customJestConfig = {
 			'<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js'
 	},
 	testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
-	testEnvironment: 'jest-environment-jsdom',
+	testEnvironment: 'jsdom',
 	transform: {
 		'^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]
 	},
