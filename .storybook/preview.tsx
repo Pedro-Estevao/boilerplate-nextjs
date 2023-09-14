@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
-import StyledComponentsRegistry from "../lib/registry";
+import StyledComponentsRegistry from '../lib/registry';
 import ThemeProviderWrapper from '../components/Wrappers/ThemeProvider';
 import GlobalStyles from '../public/styles/global';
 import { withThemeByClassName } from '@storybook/addon-styling';
@@ -11,9 +11,9 @@ const preview: Preview = {
 		controls: {
 			matchers: {
 				color: /(background|color)$/i,
-				date: /Date$/,
-			},
-		},
+				date: /Date$/
+			}
+		}
 	},
 
 	decorators: [
@@ -28,11 +28,11 @@ const preview: Preview = {
 		withThemeByClassName({
 			themes: {
 				light: 'light',
-				dark: 'dark',
+				dark: 'dark'
 			},
-			defaultTheme: 'light',
-		}),
-	],
+			defaultTheme: 'light'
+		})
+	]
 };
 
 export default preview;

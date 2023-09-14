@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import { createGlobalStyle } from "styled-components";
-import "./tailwind-import.css";
+import { createGlobalStyle } from 'styled-components';
+import './tailwind-import.css';
 
 const GlobalStyles = createGlobalStyle`
 * {

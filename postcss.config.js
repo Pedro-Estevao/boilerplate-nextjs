@@ -1,8 +1,8 @@
 const postCSSConfig = {
 	plugins: {
 		tailwindcss: {},
-		autoprefixer: {},
-	},
-}
+		autoprefixer: {}
+	}
+};
 
 module.exports = postCSSConfig;

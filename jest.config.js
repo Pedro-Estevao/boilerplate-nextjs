@@ -1,7 +1,7 @@
 const nextJest = require('next/jest');
 
 const createJestConfig = nextJest({
-	dir: './',
+	dir: './'
 });
 
 const customJestConfig = {
@@ -18,7 +18,7 @@ const customJestConfig = {
 		'!<rootDir>/.next/**',
 		'!<rootDir>/.storybook/**',
 		'!<rootDir>/*.config.js',
-		'!<rootDir>/coverage/**',
+		'!<rootDir>/coverage/**'
 	],
 	moduleNameMapper: {
 		'^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
@@ -26,18 +26,19 @@ const customJestConfig = {
 		'^.+\\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg)$/i': `<rootDir>/__mocks__/fileMock.js`,
 		'^@/components/(.*)$': '<rootDir>/components/$1',
 		'^@/app/(.*)$': '<rootDir>/app/$1',
-		'^styled-components': '<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js'
+		'^styled-components':
+			'<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js'
 	},
 	testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
-  	testEnvironment: 'jest-environment-jsdom',
+	testEnvironment: 'jest-environment-jsdom',
 	transform: {
-		'^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
+		'^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]
 	},
 	transformIgnorePatterns: [
 		'/node_modules/',
 		'/.next/',
-		'^.+\\.module\\.(css|sass|scss)$',
-	],
+		'^.+\\.module\\.(css|sass|scss)$'
+	]
 };
 
 module.exports = createJestConfig(customJestConfig);
