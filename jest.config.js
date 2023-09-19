@@ -10,7 +10,10 @@ const customJestConfig = {
 	// coverageProvider: 'v8',
 	collectCoverageFrom: [
 		'app/*.ts(x)?',
+		'app/**/*.ts(x)?',
 		'components/*.stories.ts(x)?',
+		'components/**/*.stories.ts(x)?',
+		'!lib/registry.tsx',
 		'!**/*.d.ts',
 		'!**/node_modules/**',
 		'!**/stories/**',

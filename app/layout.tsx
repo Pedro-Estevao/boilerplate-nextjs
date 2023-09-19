@@ -1,7 +1,6 @@
-import GlobalStyles from '@/public/styles/global';
 import React, { ReactNode } from 'react';
 import StyledComponentsRegistry from '@/lib/registry';
-import ThemeProviderWrapper from '@/components/Wrappers/ThemeProvider';
+import { Providers } from '@/components/Providers';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -19,9 +18,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="pt-BR">
 			<body className={inter.className}>
-				<GlobalStyles />
 				<StyledComponentsRegistry>
-					<ThemeProviderWrapper>{children}</ThemeProviderWrapper>
+					<Providers>{children}</Providers>
 				</StyledComponentsRegistry>
 			</body>
 		</html>

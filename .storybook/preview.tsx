@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
 import StyledComponentsRegistry from '../lib/registry';
-import ThemeProviderWrapper from '../components/Wrappers/ThemeProvider';
+import { Providers } from '../components/Providers';
 import GlobalStyles from '../public/styles/global';
 import { withThemeByClassName } from '@storybook/addon-styling';
 
@@ -19,10 +19,10 @@ const preview: Preview = {
 	decorators: [
 		(Story) => (
 			<StyledComponentsRegistry>
-				<ThemeProviderWrapper>
+				<Providers>
 					<GlobalStyles />
 					<Story />
-				</ThemeProviderWrapper>
+				</Providers>
 			</StyledComponentsRegistry>
 		),
 		withThemeByClassName({

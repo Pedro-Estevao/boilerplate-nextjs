@@ -1,2 +1,6 @@
 // Inside your .eslintignore file
 !.storybook
+!.jest
+generators
+next.config.js
+jest.config.js
