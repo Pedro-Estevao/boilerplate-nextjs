@@ -6,21 +6,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: 18.x
+          cache: 'pnpm'
 
       - name: Install dependencies
         run: pnpm install
 
       - name: Linting
-        run: pnpm lint
+        run: pnpm run lint
 
-      - name: Test
-        run: pnpm test
+      - name: Testing
+        run: pnpm run test
 
       - name: Build
-        run: pnpm build
+        run: pnpm run build
