@@ -21,8 +21,7 @@
 		],
 		"paths": {
 			"@/*": ["./*"]
-		},
-		"types": ["cypress", "node"]
+		}
 	},
 	"include": [
 		".jest/setup.ts",
@@ -33,5 +32,5 @@
 		"__tests__/index.test.js", 
 		"generators/plopfile.js"	
 	],
-	"exclude": ["cypress.config.ts", "cypress", "node_modules"]
+	"exclude": ["node_modules"]
 }
