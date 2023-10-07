@@ -9,21 +9,18 @@ const config: StorybookConfig = {
 	addons: ['@storybook/addon-essentials'],
 	framework: {
 		name: '@storybook/nextjs',
-		options: {}
-	},
-	docs: {
-		autodocs: 'tag'
-	},
-	staticDirs: ['../public'],
-	core: {
-		builder: {
-			name: '@storybook/builder-webpack5',
-			options: {
+		options: {
+			builder: {
 				fsCache: true,
 				lazyCompilation: true
 			}
 		}
 	},
+	docs: {
+		autodocs: 'tag'
+	},
+	staticDirs: ['../public'],
+	core: {},
 	webpackFinal: async (config) => {
 		if (config.resolve) {
 			config.resolve.plugins = [
