@@ -17,8 +17,12 @@ jobs:
         with:
           node-version: 18.x
 
-      - name: Clear pnpm cache
-        run: pnpm cache clear
+      - name: Restore pnpm cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: pnpm-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+        if: success()
 
       - name: Install dependencies
         run: pnpm install
@@ -31,3 +35,10 @@ jobs:
 
       - name: Build
         run: pnpm run build
+
+      - name: Save pnpm cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: pnpm-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+        if: success()
