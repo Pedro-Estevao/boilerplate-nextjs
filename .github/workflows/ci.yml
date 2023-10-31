@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: 18.x
 
+      - name: Clear pnpm cache
+        run: pnpm cache clear
+
       - name: Install dependencies
         run: pnpm install
 
