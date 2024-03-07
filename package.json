@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
     "test": "jest --passWithNoTests --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
     "test:ci": "jest --runInBand",
@@ -18,7 +19,13 @@
     "component:headless": "cypress run --component",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "husky install"
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*": [
+      "pnpm lint --fix",
+      "pnpm typecheck"
+    ]
   },
   "dependencies": {
     "@jest/globals": "^29.6.2",
@@ -63,7 +70,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-storybook": "^0.6.14",
     "eslint-plugin-testing-library": "^5.11.1",
-    "husky": "^8.0.0",
+    "husky": "^9.0.11",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.6.2",
     "jest-environment-jsdom": "^29.6.2",
