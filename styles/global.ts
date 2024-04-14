@@ -2,6 +2,14 @@
 
 import { createGlobalStyle } from 'styled-components';
 import './tailwind-import.css';
+import { Inter } from "next/font/google";
+
+const interFont = Inter({
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    subsets: ['latin'],
+    style: ['normal'],
+
+});
 
 const GlobalStyles = createGlobalStyle`
 * {
@@ -21,7 +29,7 @@ body,
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: ${interFont.style.fontFamily}, sans-serif;
 }
 `;
 

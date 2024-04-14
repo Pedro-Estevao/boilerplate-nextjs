@@ -1,9 +1,9 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
+import { withThemeByClassName } from '@storybook/addon-themes';
 import StyledComponentsRegistry from '../lib/registry';
 import { Providers } from '../components/Providers';
-import GlobalStyles from '../public/styles/global';
-import { withThemeByClassName } from '@storybook/addon-styling';
+import GlobalStyles from '../styles/global';
 
 const preview: Preview = {
 	parameters: {

@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import GlobalStyles from '@/public/styles/global';
+import GlobalStyles from '@/styles/global';
 import ThemeProviderWrapper from './themeProvider';
 
 export function Providers({ children }: PropsWithChildren) {
