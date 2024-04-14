@@ -4,8 +4,9 @@ const nextConfig = {
 	reactStrictMode: true,
 	compress: true,
 	compiler: {
+		removeConsole: true,
 		styledComponents: true
 	}
 };
 
-module.exports = nextConfig;
+export default nextConfig;

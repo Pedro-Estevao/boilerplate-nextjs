@@ -1,36 +1,40 @@
 {
 	"compilerOptions": {
 		"target": "es5",
-		"lib": ["dom", "dom.iterable", "esnext"],
+		"lib": ["dom", "dom.iterable", "ESNext"],
 		"allowJs": true,
 		"skipLibCheck": true,
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"noEmit": true,
 		"esModuleInterop": true,
-		"module": "esnext",
-		"moduleResolution": "Node",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"jsx": "preserve",
 		"incremental": true,
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["./*"],
+			"@types/*": ["./@types/*"],
+		},
 		"plugins": [
 			{
 				"name": "next"
 			}
 		],
-		"paths": {
-			"@/*": ["./*"]
-		}
+		"typeRoots": ["./@types", "./node_modules/@types"]
 	},
 	"include": [
 		".jest/setup.ts",
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
+		"types.d.ts",
 		".next/types/**/*.ts",
-		"__tests__/index.test.js", 
-		"generators/plopfile.js"	
+		"__tests__/index.test.ts",
+		"generators/plopfile.js"
 	],
 	"exclude": ["node_modules"]
 }
