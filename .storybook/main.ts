@@ -25,7 +25,8 @@ const config: StorybookConfig = {
 		'@storybook/addon-interactions',
 		'@storybook/addon-links',
 		'@storybook/addon-onboarding',
-		'@storybook/addon-styling'
+		'@storybook/addon-styling-webpack',
+		'@storybook/addon-themes'
 	],
 	typescript: {
 		reactDocgen: 'react-docgen-typescript'

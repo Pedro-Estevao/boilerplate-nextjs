@@ -5,4 +5,4 @@ const postCSSConfig = {
 	}
 };
 
-module.exports = postCSSConfig;
+export default postCSSConfig;
