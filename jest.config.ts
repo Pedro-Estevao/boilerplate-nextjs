@@ -29,8 +29,6 @@ const config: Config = {
 	// An array of glob patterns indicating a set of files for which coverage information should be collected
 	// collectCoverageFrom: undefined,
 	collectCoverageFrom: [
-		'<rootDir>/app/*.ts(x)?',
-		'<rootDir>/app/**/*.ts(x)?',
 		'<rootDir>/components/*.stories.ts(x)?',
 		'<rootDir>/components/**/*.stories.ts(x)?',
 		'!<rootDir>/lib/**',
@@ -122,7 +120,6 @@ const config: Config = {
 		'^.+\\.(css|sass|scss)$': '<rootDir>/__mocks__/styleMock.js',
 		'^.+\\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg)$/i': `<rootDir>/__mocks__/fileMock.js`,
 		'^@/components/(.*)$': '<rootDir>/components/$1',
-		'^@/app/(.*)$': '<rootDir>/app/$1',
 		'^styled-components':
 			'<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js'
 	},
