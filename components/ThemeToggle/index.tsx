@@ -12,7 +12,11 @@ const ThemeToggle = () => {
 	};
 
 	useEffect(() => {
-		theme === 'dark' ? setIcon('🌞') : setIcon('🌙');
+		if (theme === 'dark') {
+			setIcon('🌞');
+		} else {
+			setIcon('🌙');
+		}
 	}, [theme]);
 
 	return (

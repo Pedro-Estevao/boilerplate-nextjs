@@ -6,7 +6,6 @@ const config: StorybookConfig = {
 		name: '@storybook/nextjs',
 		options: {
 			builder: {
-				useSWC: true,
 				fsCache: true,
 				lazyCompilation: true
 			}
@@ -16,9 +15,6 @@ const config: StorybookConfig = {
 		'../components/**/*.stories.@(ts|tsx)',
 		'../app/**/*.stories.@(ts|tsx)'
 	],
-	features: {
-		storyStoreV7: false
-	},
 	addons: [
 		'@storybook/addon-controls',
 		'@storybook/addon-essentials',
@@ -26,7 +22,9 @@ const config: StorybookConfig = {
 		'@storybook/addon-links',
 		'@storybook/addon-onboarding',
 		'@storybook/addon-styling-webpack',
-		'@storybook/addon-themes'
+		'@storybook/addon-themes',
+        '@storybook/icons',
+        '@chromatic-com/storybook'
 	],
 	typescript: {
 		reactDocgen: 'react-docgen-typescript'

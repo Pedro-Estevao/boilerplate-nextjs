@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import { expect } from '@jest/globals';
 import Main from '@/components/Main';
 
 describe('<Main />', () => {

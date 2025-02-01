@@ -50,7 +50,8 @@ const config: Config = {
 		'!<rootDir>/.vscode/**',
 		'!<rootDir>/generations/**',
 		'!<rootDir>/old/**',
-		'!<rootDir>/target/**'
+		'!<rootDir>/target/**',
+		'!<rootDir>/@types/**'
 	],
 
 	// The directory where Jest should output its coverage files
@@ -171,7 +172,7 @@ const config: Config = {
 	// setupFiles: [],
 
 	// A list of paths to modules that run some code to configure or set up the testing framework before each test
-	setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
+	setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
 
 	// The number of seconds after which a test is considered as slow and reported as such in the results.
 	// slowTestThreshold: 5,
@@ -189,10 +190,10 @@ const config: Config = {
 	// testLocationInResults: false,
 
 	// The glob patterns Jest uses to detect test files
-	// testMatch: [
-	//   "**/__tests__/**/*.[jt]s?(x)",
-	//   "**/?(*.)+(spec|test).[tj]s?(x)"
-	// ],
+	testMatch: [
+		"**/__tests__/**/*.test.(ts|tsx|js|jsx)",
+		"**/?(*.)+(spec|test).[tj]s?(x)"
+	],
 
 	// An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
 	testPathIgnorePatterns: [

@@ -18,6 +18,7 @@
 		"paths": {
 			"@/*": ["./*"],
 			"@types/*": ["./@types/*"],
+			"@/components/*": ["components/*"]
 		},
 		"plugins": [
 			{
@@ -27,17 +28,14 @@
 		"typeRoots": ["./@types", "./node_modules/@types"]
 	},
 	"include": [
-		".jest/setup.ts",
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
 		"types.d.ts",
 		".next/types/**/*.ts",
-		"__tests__/index.test.ts",
 		"generators/plopfile.js"
 	],
 	"exclude": [
-		"node_modules",
-		"**/*.test.*"
+		"node_modules"
 	]
 }

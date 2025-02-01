@@ -6,7 +6,18 @@ export default {
 	component: Main,
 	parameters: {
 		layout: 'fullscreen'
-	}
+	},
+	decorators: [
+		(Story) => (
+			<div style={{ width: '100%', height: '100vh' }}>
+				<div
+					style={{ maxWidth: '104rem', margin: '0 auto', padding: '50px 0' }}
+				>
+					<Story />
+				</div>
+			</div>
+		)
+	]
 } as Meta;
 
 export const Default: StoryObj = {};
